@@ -26,6 +26,13 @@ h2 {
 p, a{
     font-family: var(--paragraph-font);
 }
+
+p{
+    padding: 10px;
+    Color: #ffffff;
+    line-height: 1em; 
+}
+
 nav {
     padding: 1em;  
     display: flex;
