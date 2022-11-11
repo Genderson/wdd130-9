@@ -120,7 +120,7 @@ main, section {
 /*middle section*/
 .home-grid{
     display: grid;
-    grid-template-columns: repeat(10, 1fr);;
+    grid-template-columns: repeat(10, 1fr);
 }
 .card-img {
     width: 100%;
@@ -212,6 +212,101 @@ footer p a:hover {
 footer .social img{
     padding-top: 15px;
 }
+
+/*rivers page*/
+header{
+    background-image: url('../images/menu.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rivers-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 5em;
+    align-items: center;
+    text-align: justify;
+    padding-top: 70px;
+}
+.idaho-card{
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+.utah-card{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.arizona-card{
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+.river-card-img{
+    height: 300px;
+    border: 10px solid #FFB703;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.idaho-text{
+    grid-column: 4/6;
+    grid-row: 1/2;
+}
+.utah-text{
+    grid-column: 4/6;
+    grid-row: 2/3;
+}
+.arizona-text{
+    grid-column: 4/6;
+    grid-row: 3/4;
+}
+.rivers-grid p{
+    color:#000000;
+}
+
+/*contact us page*/
+.contactus-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1em;
+    align-items: center;
+    text-align: justify;
+    padding-top: 70px;
+}
+.title{
+    grid-column: 3/5;
+    grid-row: 1/2;
+}
+.content{
+    grid-column: 3/5;
+    grid-row: 2/3;
+    color:#000000;
+    padding: 0;
+    margin: 0;
+}
+.contactus-form{
+    grid-column: 3/5;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-gap: 1em;
+    font-family: var(--paragraph-font);
+}
+input[type="text"] {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid;
+}
+.send{
+    grid-column: 2/3;
+    width: 200px;
+    padding: 12px;
+    background-color: #219EBC;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
