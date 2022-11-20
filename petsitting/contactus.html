@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>Pet sitting | Contactus</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a href="index.html" id="logo_link" >
+                <img class="logo" src="images/logo.png" alt="pet sitting Logo">
+            </a>    
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="site-plan.html">Site Plan</a>                
+            </nav>
+        </header>
+    
+        <main class="contactus-grid">
+            <h2 class="title">Contact us</h2>
+            <img class="contactus" src="images/contactus2.jpg" alt="contact us">
+            <p class="content">
+                If you want additional information about our services and products, complete our form and we will 
+                contact you as soon as possible. Fields with an asterisk are required. We will respond to you 
+                within a maximum period of 48 hours and if we can, we will do it sooner, thank you
+            </p>
+            <div id="feedback"></div>
+            <form class="contactus-form" action="#">
+                <label for="user_name" >Name</label>
+                <input type="text" id="user_name" name="user_name" value="">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" value="">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" value="">
+                <label for="lmessage">Message</label>
+                <textarea rows="10" cols="20"></textarea>  
+                <input class="send" type="submit" value="Send">
+            </form> 
+        </main>
+        <footer>
+            <p id="info">Pet sitting &copy; 2022 - Genderson Barinas Guio WDD130-09</p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank" >
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank" >
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank" >
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+</body>
+</html>
