@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300&display=swap');
+:root {
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: 'Raleway', sans-serif;
+  }
+
+body{
+    background-color: #000516e0; 
+    margin: 0; 
+    padding: 0;
+}
+h2{
+    font-family: var(--heading-font);
+    color:#FFCA3A;
+}
+#content { 
+    background-color: #fcfbfb;
+    max-width:1600px;
+    margin: 0 auto;
+}
+header{
+    display: grid;
+    grid-template-columns: 100px auto;
+    background-color: #8AC926;
+    align-items: center;
+}
+nav {
+    padding: 1em;  
+    display: flex;
+    justify-content: space-around;
+    
+}
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding: .75em  .75em;    
+    line-height: 1em; 
+    font-family: var(--heading-font); 
+    font-size: 1.4em;
+    font-weight: bold;
+}
+nav a:hover{
+    background-color: #1982C4;
+    color: #ffffff;
+}
+#logo_link{
+    padding-top: 5px;
+    justify-self: center; 
+    align-self: center;
+}
+.logo{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    border-radius: 40px;
+    margin-left: 35px;
+}
+#hero-img{
+    width: 100%;
+}
+
+.line {
+    height: 15px;
+    background-color: #1982C4;
+    margin-top: 50px;
+}
+p{
+    text-align: justify;
+    font-family: var(--paragraph-font); 
+    font-size: 1.2em;
+    line-height: 1.25em;
+}
+.home-grid{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+.info{
+    grid-column: 2/10;
+    grid-row: 1/2;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.message{
+    grid-column: 2/6;
+    grid-row: 2/3;
+    background-color: #370C73;
+    padding: 20px 30px 30px 30px;
+    border-radius: 8px;
+}
+.message p{
+    color: #ffffff;
+}
+.dogcat{
+    grid-column: 7/10;
+    grid-row: 2/3;
+    width: 100%;
+}
+.main-services{
+    grid-column: 1/11;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    margin-top: 100px;
+    background-color: #1982C4;
+    padding-bottom: 100px;
+}
+.our-services{
+    grid-column: 1/11;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.spa-card{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.training-card{
+    grid-column: 5/7;
+    grid-row: 3/4;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.walkers-card{
+    grid-column: 8/10;
+    grid-row: 3/4;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.main-services h2{
+    text-align: center;
+}
+.card-img{
+    width: 100%;
+    height: 212px;
+    border-radius: 10px 10px 0px 0px;
+}
+.main-services a{
+    display: block;
+    text-align: end;
+    padding: 20px;
+    font-size: 1.3em;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+    font-weight: bold;
+}
+.main-services p{
+    padding: 10px 15px 0px 15px;
+    min-height: 120px;
+}
+footer {
+    background-color: #023047;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:#ffffff;
+}
