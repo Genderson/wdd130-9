@@ -268,13 +268,13 @@ footer {
     grid-row: 1/2;
     justify-self: center;
 }
-.contactus{
+.contactus-1{
     grid-column: 3/4;
     grid-row: 2/3;
     width: 100%;
     border-radius: 8px;
 }
-.content{
+.content-1{
     grid-column: 4/6;
     grid-row: 2/3;
     color:#000000;
@@ -282,9 +282,23 @@ footer {
     margin: 0;
     align-self: self-start;
 }
+.contactus-2{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    width: 100%;
+    border-radius: 8px;
+}
+.content-2{
+    grid-column: 4/6;
+    grid-row: 3/4;
+    color:#000000;
+    padding: 0;
+    margin: 0;
+    align-self: self-start;
+}
 .contactus-form{
     grid-column: 3/5;
-    grid-row: 3/4;
+    grid-row: 4/5;
     display: grid;
     grid-template-columns: 150px auto;
     grid-gap: 1em;
